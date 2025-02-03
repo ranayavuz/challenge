@@ -2,7 +2,17 @@
 <html>
   <body>
     <script>
-      
+                  function submitform2(event) {
+        event.preventDefault(); // Prevent form from submitting
+        let y = event.target.ans2.value; // Get input value
+
+        if (y === "0.1666") {
+          alert("Correct!");
+          event.target.submit(); // Allow submission manually
+        } else {
+          alert("Wrong!");
+        }
+      }
     </script>
     <noscript>
       oof, something happened :(
