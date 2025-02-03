@@ -13,13 +13,30 @@
           alert("Wrong!");
         }
       }
+            function submitform2(event) {
+        event.preventDefault(); // Prevent form from submitting
+        let y = event.target.ans2.value; // Get input value
+
+        if (y === "0.1666") {
+          alert("Correct!");
+          event.target.submit(); // Allow submission manually
+        } else {
+          alert("Wrong!");
+        }
+      }
     </script>
 <h1>math</h1>
     <h2>daily</h2>
+    <h3>middle school</h3>
     <p>what is square root of -1 squared times 595</p>
     <form name="myForm" onsubmit="submitform(event)" action="ansd.html">
       Answer: <input type="text" name="fname">
       <input type="submit" value="Submit">
     </form>
+    <h3>elementary school</h3>
+    <p>what is 0.5 divided by 3</p>
+        <form name="myForm2" onsubmit="submitform(event)" action="ansd.html">
+      Answer: <input type="text" name="ans2">
+      <input type="submit" value="Submit">
   </body>
 </html>
