@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <body>
+    <script>
+      function submitform() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "1") {
+    alert("correct");
+    return true;
+  } else {
+    alert("wrong")
+    return false
+  }
+}
+    </script>
+    <form name="myForm" onsubmit="return submitform()" method="post">
+answer: <input type="text" name="fname">
+<input type="submit" value="Submit">
+</form>
+  </body>
+</html>
